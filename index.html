@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dev Tools - V1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="home-header">
+            <a href="/" class="home-logo-link">
+                <img src="/img/light_logo.png" class="home-logo">
+            </a>
+            <div style="display: flex; flex-direction: row; justify-content: center;">
+                <h1 class="home-h1">It's your all Dev Tools</h1>
+                <span class="hooray">!</span>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="home-controller">
+                <p class="home-p">Here you are; This is a Lorm Ipsum!</p>
+                <div style="display: flex; flex-direction: row; gap: 10px;">
+                    <button class="button-type1" onclick="lorem()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-ccw-icon lucide-refresh-ccw"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+                        <p>Regenerate</p>
+                    </button>
+                    <button id="copy-button" class="button-type2" onclick="copy()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-files-icon lucide-files"><path d="M15 2h-4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"/><path d="M16.706 2.706A2.4 2.4 0 0 0 15 2v5a1 1 0 0 0 1 1h5a2.4 2.4 0 0 0-.706-1.706z"/><path d="M5 7a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 1.732-1"/></svg>
+                        <p id="copy-text" style="display: none; margin: 0;">Copied!</p>
+                    </button>
+                </div>
+            </div>
+            <textarea id="lorem-ipsum" class="home-textarea" rows="15" readonly></textarea>
+        </div>
+
+        <div class="footer">
+            <hr>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+                <p style="color: #9b9b9b;">Dev Tool v1.0.0</p>
+                <p style="color: #10b981;">● Online</p>
+            </div>
+        </div>
+        <script src="/components/tools.js"></script>
+        <script src="/components/lorem-ipsum.js"></script>
+    </body>
+</html>

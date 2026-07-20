@@ -1,0 +1,294 @@
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Body */
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, #302b35, #192d33);
+}
+
+/* Frame */
+.frame-sidebar {
+    position: relative;
+    align-self: center;
+    width: 200px;
+    height: 95vh;
+    background: linear-gradient(-45deg, #2d3f45, #58505f);
+    border: 1px solid #50595b;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Home */
+.home-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.hooray {
+  cursor: default;
+  margin: 6px 0px 0px 6px;
+  font-family: "Ubuntu";
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, #8afff7, #ffffff24);
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0px 0px 15px #8afff7);
+  transform: rotate(10deg);
+}
+
+.home-logo-link {
+  position: relative;
+  align-self: center;
+  width: 180px;
+  margin-bottom: -35px;
+}
+
+.home-logo {
+  width: 180px;
+}
+
+.home-h1 {
+  cursor: default;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 28px;
+  font-style: normal;
+  color: transparent;
+  background: linear-gradient(180deg, #e9e9e9, #cdcdcd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0px 8px 6px rgba(35, 27, 37, 0.74));
+}
+
+.home-container {
+  align-self: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  background: linear-gradient(-45deg, #202c33, #302b35) padding-box, 
+      linear-gradient(157deg, #b3bfbe57, #756f7754) border-box;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  filter: drop-shadow(0px 0px 20px #fbc7ff25);
+}
+
+.home-controller {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-p {
+  cursor: default;
+  margin: 0;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+
+.home-textarea {
+  padding: 20px;
+  background-color: #60487338;
+  border: 1px solid #dbb9e159;
+  border-radius: 15px;
+  color: #fff;
+  filter: drop-shadow(0px 0px 0px #fbc7ff00);
+  resize: none;
+  transition: all ease-in-out 0.5s;
+}
+
+.home-textarea:active, .home-textarea:focus, .home-textarea:focus-visible {
+  background-color: #60487314;
+  border-width: 2px;
+  outline: none;
+  filter: drop-shadow(0px 5px 5px #fbc7ff85);
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  width: 50%;
+  bottom: 25px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer p {
+  cursor: default;
+  margin: 0;
+  font-family: "Ubuntu";
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.footer hr {
+  width: 100%;
+  margin-bottom: 22px;
+  border-width: 1px 0px 0px 0px;
+  border-color: #ffffff59;
+}
+
+/* Buttons */
+.button-type1 {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 30px 5px 30px;
+  background-color: #7d5f877d;
+  border: 1px solid #ffffff63;
+  border-radius: 50px;
+  color: #ffffffb4;
+  transition: all ease-in-out 0.15s;
+}
+
+.button-type1:hover {
+  color: #ffd5f6;
+  border-color: #f3afff;
+}
+
+.button-type1 p {
+  margin: 0;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+}
+
+.button-type1 svg {
+  width: 16px;
+}
+
+.button-type2 {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 8px;
+  background-color: #5f87837d;
+  border: 1px solid #8dc6cfa8;
+  border-radius: 50px;
+  color: #adffedb4;
+  transition: all ease-in-out 0.15s;
+}
+
+.button-type2:hover {
+  color: #b6f1e4;
+  border-color: #aee5de;
+}
+
+.button-type2 svg {
+  width: 16px;
+}
+
+
+/* -- Mobile -- */
+@media (max-width: 576px) {
+  .home-header {
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .home-h1 {
+    font-size: 20px;
+  }
+
+  .hooray {
+    font-size: 35px;
+  }
+
+  .home-logo-link {
+    width: 95px;
+    margin: 0px -45px 0px 0px;
+  }
+
+  .home-logo {
+    width: 95px;
+  }
+
+  .home-container {
+    width: 85%;
+    background: none;
+    border: none;
+    padding: 29px 0 0 0px;
+    border-style: solid;
+    border-color: #ffffff47;
+    border-width: 1px 0px 0px;
+    border-radius: 0;
+  }
+
+  .home-controller {
+    display: flex;
+    flex-direction: column;
+  }
+}
